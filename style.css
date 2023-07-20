@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: #fff;
+    color: #1c1e21;
+    direction: ltr;
+    line-height: 1.34;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+#container {
+    background: #F0F2F5;
+
+}
+
+#wraper {
+    display: flex;
+    flex-direction: row;
+    width: 980px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 92px;
+    padding-bottom: 200px;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: start;
+    justify-content: center;
+    padding-right: 4rem;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding-top: 2rem;
+}
+
+#left .logo {
+    padding-bottom: 16px;
+}
+
+#left .logo img {
+    height: 106px;
+    margin: -28px;
+}
+
+#left h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 0 0 20px;
+    margin: 0;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+    width: 500px;
+}
+
+#signin {
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 396px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+#signin .text-input {
+    margin-bottom: .8rem;
+    width: 100%;
+    border: 1px solid #DDDFE2;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.text-input::placeholder {
+    color: #90949C;
+}
+
+.text-input:focus::placeholder {
+    color: #BEC3C9;
+}
+
+#signin .links {
+    text-align: center;
+}
+
+#signin .links a {
+    text-decoration: none;
+    color: #4277F2;
+    font-size: .9rem;
+}
+
+#signin .links hr {
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #BEC3C9;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#create-page-link {
+    margin-top: 1.5rem;
+    font-size: .9rem;
+}
+
+#create-page-link a {
+    text-decoration: none;
+    color: #000;
+}
+
+#main-footer {
+    max-width: 980px;
+    margin: auto;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#main-footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-separator {
+    margin: 0;
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #BEC3C9;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#main-footer ul li a{
+    text-decoration: none;
+    color: #90949C;
+    padding-right: 0.9rem;
+    font-size: 0.8rem;
+}
+
+#main-footer ul li a:hover{
+    text-decoration: underline;
+}
+
+#main-footer ul li .add-btn {
+    border: 1px solid #90949C;
+    border-radius: 2px;
+    background-color: #F0F2F5;
+    cursor: pointer;
+    padding: 0;
+    text-align: center;
+}
+
+#main-footer ul li .add-btn span {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 4px;
+}
+
+#copyright {
+    margin: 0;
+    padding-top: 1.1rem;
+    font-size: .7rem;
+    color: #90949C;
+}
+
+/* Buttons */
+.primary-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    background-color: #4277F2;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.secondary-btn {
+    border: 0;
+    padding: 14px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.1rem;
+    background-color: rgb(0, 175, 53);
+    cursor: pointer;
+    margin-bottom: .5rem;
+    transition: background-color 0.5s;
+}
+
+.secondary-btn:hover {
+    background-color: #40A420;
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+    #container {
+        padding-top: 20px;
+    }
+
+    #wraper {
+        flex-direction: column;
+        width: 80%;
+        padding-top: 20px;
+        padding-bottom: 72px;
+    }
+
+    #left {
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 40px;
+        margin: 0 auto;
+        width: 400px
+    }
+
+    #left h2 {
+        text-align: center;
+    }
+
+    #right {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    #wraper {
+        justify-content: space-between;
+        width: auto;
+        margin: 0 40px;
+    }
+
+    #left h2 {
+        font-size: 24px;
+        line-height: 28px;
+        width: auto;
+    }
+
+    #main-footer {
+        margin: 0 40px;
+    }
+}
